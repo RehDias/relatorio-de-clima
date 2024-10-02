@@ -8,9 +8,8 @@ import org.springframework.stereotype.Component;
 /**
  * The type Get weather report config.
  */
-@Component
 public class GetWeatherReport implements WeatherService {
-  private WeatherClient weatherClient;
+  private final WeatherClient weatherClient;
 
   @Autowired
   public GetWeatherReport(WeatherClient weatherClient) {
